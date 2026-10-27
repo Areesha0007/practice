@@ -1,0 +1,75 @@
+body{
+    background-color: beige;
+    height: 100vh;
+    display: flex ;
+   justify-content: center;
+
+}
+.parent{
+    background-color:orange ;
+    height: 80%;
+    width: 600px;
+border-radius: 50px;
+border: 2px solid black;
+display: flex ;
+overflow: hidden;
+}
+.left{
+ flex-direction: column;
+ display: flex;
+ width: 100px;
+ height: 100%;
+ border-right:  2px solid  black;
+ align-items: center;
+ flex :1;
+}
+.right{
+    flex:1;
+    height: 100%;
+    width:100px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+}
+  p
+{
+    margin-right: 150px; 
+}
+ img{
+    border-radius: 100px;
+    margin-top: 350px;
+ }
+
+ .fa-xmark{
+    margin-left: 160px;
+ }
+ i{
+        cursor: pointer;
+
+ }
+  input{
+    margin-top: 50px;
+
+  }
+  button{
+    transition: all 5s ease;
+    cursor  : pointer;
+    margin-top: 50px;
+
+  }
+  button:hover{
+    background-color:pink;
+    color: black;
+  }
+
+  body:has(#close.checked) .parent {
+    display:none;
+  }
+  #close {
+    display: none;
+  }
+
+  body:has(#close:checked) #close {
+    display: block;
+  }

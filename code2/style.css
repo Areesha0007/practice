@@ -1,0 +1,19 @@
+body{
+height: 100vh;
+}
+
+.parent{
+    
+    border-radius: 10px;
+    background-color: blue;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.right {
+    display: flex;
+    gap: 10px;
+    
+
+}
