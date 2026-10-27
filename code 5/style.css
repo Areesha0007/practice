@@ -1,0 +1,44 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.parent{
+    height: 400px;
+    width: 600px;
+    justify-content: center;
+    background-color: brown;
+    margin-top: 100px;
+    
+}
+.upper{
+    display: flex;
+    width: 100%;
+    height:300px;
+}
+ 
+.right{
+    flex: 1;
+    border-right: 2px solid black;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.left{
+     flex: 1;
+    border-right: 2px solid black;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.lower{
+    margin-left: 100px;
+}
